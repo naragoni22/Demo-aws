@@ -3,7 +3,7 @@ pipeline{
    stages{
       stage('check the vesion'){
         steps{
-          bat 'mvn -version'
+          sh 'mvn -version'
              }
          }
      }
