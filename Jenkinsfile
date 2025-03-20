@@ -2,6 +2,7 @@ pipeline{
    agent {
       docker {
          image 'naresh20/hello-world-python:0.0.1.Release'
+         label 'my-defined-label'
              }
          }
    stages{
