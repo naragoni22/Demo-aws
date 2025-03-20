@@ -1,6 +1,11 @@
 pipeline{
    agent any
    stages{
+      stage('mvn install'){
+        steps{
+          sh 'mvn clean install'
+             }
+         }
       stage('check the vesion'){
         steps{
           sh 'mvn -version'
